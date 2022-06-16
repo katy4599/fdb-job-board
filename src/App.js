@@ -1,16 +1,14 @@
 import React /*{useState, useEffect}*/ from 'react';
 import Navbar from './components/Navbar';
-import SearchJobs from './components/SearchJobs';
-import JobCards from './components/JobCards';
+import Footer from "./components/Footer";
+import SearchJobs from "./components/SearchJobs";
+import JobCards from "./components/JobCards";
 //import HandleSubmit from './components/HandleSubmit';
 import data from './data';
-
-
 
 export default function App() {
   //const [jobsData, setJobsData] = useState({})
  
-  
   
   // useEffect(() => {
   //   var myHeaders = new Headers();
@@ -49,22 +47,37 @@ export default function App() {
     
 
   return (
-    <div>
-      <div>
-        <Navbar />
-      </div>
+    <>
+			<div className="page--top">
+				<Navbar />
+			</div>
+    
+      <div className="page--middle">
+				<SearchJobs />
+			</div>
+    
       <div className='body-section'>
         <SearchJobs />
       </div>
+    
         {/* <Submit onClick= /> */}
+  
       <div>
         <h1 className='result-title'>{search} jobs near {zipcode}</h1>
       </div>
+
       <div className="jobs-list">
         {jobCards}
-      </div>  
-    </div>
+      </div>
+
+      <div className="page--bottom">
+				<JobCards />
+			</div>
+      
+			<div className="page--footer">
+				<Footer />
+			</div>
+		</>
     
   );
-
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function JobCards(props) {
     console.log(props)
-    return (
+    return(
         <div>
             <div className="jobCard">
                 <a href={props.url} className="jobTitle">
@@ -13,4 +13,6 @@ export default function JobCards(props) {
             </div>
         </div>
     )
+
+    
 }
