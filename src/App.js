@@ -53,10 +53,6 @@ export default function App() {
 			</div>
     
       <div className="page--middle">
-				<SearchJobs />
-			</div>
-    
-      <div className='body-section'>
         <SearchJobs />
       </div>
     
@@ -70,10 +66,6 @@ export default function App() {
         {jobCards}
       </div>
 
-      <div className="page--bottom">
-				<JobCards />
-			</div>
-      
 			<div className="page--footer">
 				<Footer />
 			</div>
