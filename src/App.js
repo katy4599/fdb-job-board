@@ -6,6 +6,8 @@ import JobCards from './components/JobCards';
 import data from './data';
 
 
+const search = 'Javascript';
+const zipcode = '64055';
 
 export default function App() {
   //const [jobsData, setJobsData] = useState({})
@@ -23,8 +25,6 @@ export default function App() {
   //     redirect: 'follow'
   //   }
 
-    const search = 'Javascript';
-    const zipcode = '64055';
 
   //   fetch(`https://api.adzuna.com/v1/api/jobs/us/search/2?app_id=9dd05241&app_key=de01cd4c74a173b4234f900921fb6e30&results_per_page=10&what=${search}&where=${zipcode}&distance=40`, requestOptions)
   //   .then(response => response.json())
