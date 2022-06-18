@@ -11,12 +11,14 @@ export default function SearchJobs() {
 					id="outlined-basic"
 					label="Search"
 					variant="outlined"
+					size="small"
 				/>
 				<TextField
 					className="search--box"
 					id="outlined-basic"
 					label="Zip Code"
 					variant="outlined"
+          size="small"
 				/>
 				{/* <button className="button" type="submit">
 					Submit

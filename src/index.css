@@ -1,50 +1,64 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: #fcfbfc;
+  background-color: cornsilk;
+  font-family: 'Brawler', serif;
 }
 
-nav {
-  height: 60px;
+.page--top {
+  height: 9vh;
   display: flex;
-  /* background-color: aqua; */
-  padding: 10px 100px;
+  background-color: #007a33;
+  justify-content: center;
   align-items: center;
-  font-size: 4vw;
+  font-size: 46px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .logo {
   max-height: 90%;
 }
 
-.title {
-  margin-left: 20px;
+.title1 {
+  margin-left: .5em;
+  color: #FFD700
 }
 
-.linkSection {
-  height: 70px;
-  display: flex;
-  background-color: #007a33;
-  flex-direction: row;
-  padding-left: 100px;
-  align-items: center;
-  font-size: 1vw;
+.title2 {
+  margin-left: .5em;
   color: white
+  
 }
 
-.link {
-  margin-right: 100px;
-}
-
-.searchJobs {
+.page--middle {
   max-width: 900px;
-  height: 9vh;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
-  background-color: #ffd700;
-  font-size: 1vw;
-  align-content: center;
+}
+
+.mui--box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  height: 15vh;
+}
+
+.search--box {
+  background-color: white;
+}
+
+.button{
+  background-color: white;
+}
+
+.page--bottom {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .box {
@@ -56,7 +70,6 @@ nav {
   margin-right: auto;
   padding-left: 50px;
   font-size: 1vw;
-  
 }
 
 .button{
@@ -65,36 +78,28 @@ nav {
 }
 
 .result-title {
-  width: 692px;
-  height: 79px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Bitter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-  color: #000000;
+  text-align: center;
+  font-size: 36px;
 }
 
 .jobCard {
   max-width: 60%;
-  min-height: 200px;
+  min-height: 150px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px 10px;
-  background-color: grey;
-  box-shadow: 2px 2px lightgrey;
+  background-color: white;
+  box-shadow: 6px 6px 6px lightgray;
   font-size: 1vw;
-  font-family: 'Bitter';
-  font-style: normal; 
 }
 
 .jobTitle {
   color: #007A33;
-  font-size: 1.25em;
+  font-size: 12px;
   text-decoration: underline;
-  margin-bottom: 0;
 }
 
 a:link {
@@ -116,16 +121,25 @@ a:active {
 }
 
 .comp-loc {
-  font-size: 24px;
-  margin-top: 0;
-  color: black;
-  text-decoration: none;
+  font-size: 20px;
 }
 
 .description {
-  font-size: 20px;
-  font-family: 'Bitter';
-  font-style: normal;
-  color: black;
-  text-decoration: none;
+  font-size: 16px;
+}
+
+.page--footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  background-color: #007a33;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  font-size: 3vh;
+  color: white;
 }

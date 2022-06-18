@@ -30,6 +30,7 @@ export default function App() {
   
   let resultsArr = t(jobsData, 'results').safeArray;
      
+
   return (
     <>
 			<div className="page--top">
@@ -66,6 +67,7 @@ export default function App() {
           }
         </div>
         
+
       </div>
 
 			<div className="page--footer">
@@ -76,4 +78,3 @@ export default function App() {
   );
 
 }
-
