@@ -30,7 +30,6 @@ export default function App() {
   
   let resultsArr = t(jobsData, 'results').safeArray;
      
-
   return (
     <>
 			<div className="page--top">
@@ -39,9 +38,9 @@ export default function App() {
     
       <div className="mui--box">
 				<SearchJobs />
-        <button className="button" type="submit" onClick={getData()}>
+        {/* <button className="button" type="submit" onClick={getData()}>
 					Submit
-				</button>
+				</button> */}
 			</div> 
 
       {/* <div>
@@ -55,19 +54,12 @@ export default function App() {
               <JobCards 
                     className="jobs-list"
                     key= {job.id}
-                    // {...job}
-                    // the below are here b/c don't know if {...job}works. 
-                    title={job.title}
-                    company={job.company}
-                    location={job.location}
-                    description={job.description}
-                    url={job.redirect_url}                     
+                    job= {job}                    
                 />
           ))
           }
         </div>
         
-
       </div>
 
 			<div className="page--footer">
@@ -78,3 +70,4 @@ export default function App() {
   );
 
 }
+

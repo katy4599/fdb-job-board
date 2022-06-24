@@ -1,29 +1,39 @@
 import React from "react";
-import Box from "@mui/material/Box";
+//import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
 export default function SearchJobs() {
+		// const [search, setSearch] = useState("");
+		// const [zipcode, setZipcode] = useState("");
 	return (
 		<div className='mui--box'>
-			<Box className='mui--box' component="form" noValidate autoComplete="on">
-				<TextField
+			<form className='mui--box' component="form" id="form" noValidate autoComplete="on">
+				<TextField 
 					className="search--box"
-					id="outlined-basic"
+					id="search"
 					label="Search"
 					variant="outlined"
-					size="small"
+					type="text"
+					//value={search}
+					//onChange={(e) => {
+					//	setSearch(e.target.value)
+					
 				/>
 				<TextField
 					className="search--box"
-					id="outlined-basic"
+					id="zipcode"
 					label="Zip Code"
 					variant="outlined"
-          size="small"
+					type="text"
+					// value={zipcode}
+					// onChange={(e) => {
+					// 	setZipcode(e.target.value)
+					
 				/>
-				{/* <button className="button" type="submit">
+				<button className="button" type="submit" id="submit">
 					Submit
-				</button> */}
-			</Box>
+				</button>
+			</form>
 		</div>
 	);
 }
