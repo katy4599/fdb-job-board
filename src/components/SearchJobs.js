@@ -1,6 +1,7 @@
 import React from "react";
 //import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import { getData } from "./GetData";
 
 export default function SearchJobs() {
 		// const [search, setSearch] = useState("");
@@ -30,7 +31,7 @@ export default function SearchJobs() {
 					// 	setZipcode(e.target.value)
 					
 				/>
-				<button className="button" type="submit" id="submit">
+				<button onSubmit={getData} className="button" type="submit" id="submit">
 					Submit
 				</button>
 			</form>

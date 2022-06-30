@@ -3,9 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from "./components/Footer";
 import SearchJobs from "./components/SearchJobs";
 import JobCards from "./components/JobCards";
-//import data from './data';
 import { getData } from './components/GetData';
-//import data from './data';
 import t from 'typy';
 
 
@@ -38,9 +36,7 @@ export default function App() {
     
       <div className="mui--box">
 				<SearchJobs />
-        {/* <button className="button" type="submit" onClick={getData()}>
-					Submit
-				</button> */}
+     
 			</div> 
 
       {/* <div>

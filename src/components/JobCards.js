@@ -1,7 +1,8 @@
 import React from "react";
 
-export default function JobCards(job) {
-    console.log(job)
+export default function JobCards(props) {
+    console.log(props)
+    const {job} = props
     return (
         <div>
             <div className="jobCard">
